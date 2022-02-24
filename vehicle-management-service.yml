@@ -10,7 +10,8 @@ spring:
     generate-ddl: true
   profiles:
     active:
-    - dev
+    - dev
+
 server:
   port: 9191
   
@@ -40,10 +41,12 @@ management:
         include: "*"
         
 
-
 ---
 spring:
-  profiles: dev
+  cloud:
+    config:
+      profile: dev
+#  profiles: dev
   datasource:
     username: root
     password: root
@@ -56,7 +59,10 @@ spring:
 
 ---
 spring:
-  profiles: stage
+ # profiles: stage
+  cloud:
+    config:
+      profile: stage
   h2:
     console:
       enabled: true
