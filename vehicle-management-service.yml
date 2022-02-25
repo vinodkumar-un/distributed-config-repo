@@ -56,6 +56,7 @@ spring:
 #    url: jdbc:mysql://medilab-department-mysql-container:3306/medilab-department-service
 #    url: jdbc:mysql://vehicle-service-mysql-container:3306/vehicle-service-mysqldb
 #    url: jdbc:mysql://192.168.99.100:3306/vehicle-service-mysqldb
+#     tested mysql database connection
     driver-class-name: com.mysql.cj.jdbc.Driver
 
 
