@@ -43,9 +43,9 @@ management:
 
 ---
 spring:
-  cloud:
-    config:
-      profile: dev
+  #cloud:
+    #config:
+      #profile: dev
 #  profiles: dev
   datasource:
     username: root
@@ -60,9 +60,9 @@ spring:
 ---
 spring:
  # profiles: stage
-  cloud:
-    config:
-      profile: stage
+  #cloud:
+    #config:
+      #profile: stage
   h2:
     console:
       enabled: true
