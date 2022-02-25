@@ -43,9 +43,15 @@ management:
 
 ---
 spring:
+<<<<<<< HEAD
   #cloud:
     #config:
       #profile: dev
+=======
+  cloud:
+    config:
+      profile: dev
+>>>>>>> e6243be63a75de43aac71f9f659900a9fdf148fc
 #  profiles: dev
   datasource:
     username: root
@@ -60,9 +66,15 @@ spring:
 ---
 spring:
  # profiles: stage
+<<<<<<< HEAD
   #cloud:
     #config:
       #profile: stage
+=======
+  cloud:
+    config:
+      profile: stage
+>>>>>>> e6243be63a75de43aac71f9f659900a9fdf148fc
   h2:
     console:
       enabled: true
