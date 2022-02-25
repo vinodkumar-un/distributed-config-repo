@@ -43,10 +43,10 @@ management:
 
 ---
 spring:
-  #profiles: dev
-  cloud:
-    config:
-      profile: dev
+  profiles: dev
+  #cloud:
+    #config:
+      #profile: dev
       
   datasource:
     username: root
@@ -61,10 +61,10 @@ spring:
 
 ---
 spring:
-  #profiles: stage
-  cloud:
-    config:
-      profile: stage
+  profiles: stage
+  #cloud:
+    #config:
+      #profile: stage
   
   h2:
     console:
