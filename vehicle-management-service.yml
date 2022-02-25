@@ -10,7 +10,7 @@ spring:
     generate-ddl: true
   profiles:
     active:
-    - dev
+    - stage
 server:
   port: 9191
   
