@@ -67,7 +67,6 @@ spring:
   #cloud:
     #config:
       #profile: stage
-  
   h2:
     console:
       enabled: true
