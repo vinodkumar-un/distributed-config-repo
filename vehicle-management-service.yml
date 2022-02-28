@@ -71,10 +71,10 @@ spring:
     #activate:
       #on-profile:
       #- stage
-  config:
-    activate:
-      on-profile:
-      - stage
+#  config:
+#    activate:
+#      on-profile:
+#      - stage
   h2:
     console:
       enabled: true
