@@ -5,13 +5,11 @@ spring:
     config:
      uri:
      - http://localhost:8888/
-     #profile: dev
+     profile: dev
   jpa:
     show-sql: true
     generate-ddl: true
-  profiles:
-    active:
-    - dev
+
 
 server:
   port: 9191
