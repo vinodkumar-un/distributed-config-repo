@@ -31,14 +31,17 @@ info:
   version: 1.0
  databse: mysql8.0.20
  
-
-
 management: 
   endpoints:
     web:
       exposure:
         include: "*"
-        
+todays:
+  vehicle:
+    fare: 30
+    per:
+      km: 1
+
 
 ---
 spring:
