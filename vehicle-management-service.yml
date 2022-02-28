@@ -38,7 +38,7 @@ management:
         include: "*"
 todays:
   vehicle:
-    fare: 10
+    fare: 50
     per:
       km: 1
 
