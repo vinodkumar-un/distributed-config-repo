@@ -5,13 +5,13 @@ spring:
     config:
      uri:
      - http://localhost:8888/
-     profile: dev
+     #profile: dev
   jpa:
     show-sql: true
     generate-ddl: true
-  #profiles:
-    #active:
-    #- dev
+  profiles:
+    active:
+    - dev
 
 server:
   port: 9191
@@ -45,13 +45,13 @@ management:
 ---
 spring:
   #profiles: dev
-  config:
-    activate:
-      on-profile:
-      - dev
-  #cloud:
-    #config:
-      #profile: dev
+  #config:
+    #activate:
+      #on-profile:
+      #- dev
+  cloud:
+    config:
+      profile: dev
       
   datasource:
     username: root
@@ -68,13 +68,13 @@ spring:
 ---
 spring:
   #profiles: 
-  config:
-    activate:
-      on-profile:
-      - stage
-  #cloud:
-    #config:
-      #profile: stage
+  #config:
+    #activate:
+      #on-profile:
+      #- stage
+  cloud:
+    config:
+      profile: stage
   h2:
     console:
       enabled: true
