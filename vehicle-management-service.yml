@@ -44,7 +44,11 @@ management:
 
 ---
 spring:
-  profiles: dev
+  #profiles: dev
+  config:
+    activate:
+      on-profile:
+      - dev
   #cloud:
     #config:
       #profile: dev
@@ -63,7 +67,11 @@ spring:
 
 ---
 spring:
-  profiles: stage
+  #profiles: 
+  config:
+    activate:
+      on-profile:
+      - stage
   #cloud:
     #config:
       #profile: stage
