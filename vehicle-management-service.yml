@@ -47,9 +47,10 @@ spring:
     #activate:
       #on-profile:
       #- dev
-  cloud:
-    config:
-      profile: dev
+  config:
+    activate:
+      on-profile:
+      - dev
       
   datasource:
     username: root
@@ -70,9 +71,10 @@ spring:
     #activate:
       #on-profile:
       #- stage
-  cloud:
-    config:
-      profile: stage
+  config:
+    activate:
+      on-profile:
+      - stage
   h2:
     console:
       enabled: true
